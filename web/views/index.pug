@@ -1,0 +1,13 @@
+html
+  head
+    title= title
+    //- script(src="https://requirejs.org/docs/release/2.3.5/minified/require.js")
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js", integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=", crossorigin="anonymous")
+    script(src="/assets/dist/main.js")
+  body
+    h1= title
+    
+    form
+        input(type="text", name="name")
+        input(type="text", name="message")
+        input(type="submit", value="Enviar")

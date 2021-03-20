@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service Chat {
+    rpc StreamMessages(Empty) returns (stream ChatRequest);
+    rpc SendMessage(ChatRequest) returns (Empty);
+}
+
+message Empty {}
+
+message ChatRequest {
+    string name = 1;
+    string message = 2;
+}
